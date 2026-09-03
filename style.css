@@ -37,26 +37,70 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
+
 .brand img { width: 135px; }
+
 .header-message {
   flex: 1;
   margin-left: 45px;
   margin-right: 50px;
   overflow: hidden;
   white-space: nowrap;
+  min-width: 0;
 }
 
-.message-track {
-  display: inline-flex;
+/* Mensagem de boas-vindas */
+
+.message-greeting {
+  display: none;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  height: 40px;
+
+  color: var(--red);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.message-greeting.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Looping das mensagens */
+
+.message-track {
+  display: flex;
   width: max-content;
   color: var(--red);
   font-size: .78rem;
   font-weight: 800;
   letter-spacing: .08em;
   text-transform: uppercase;
-  animation: message-scroll 60s linear infinite;
+
+  animation: message-scroll 50s linear infinite;
+
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.message-track.show {
+  opacity: 1;
+}
+
+.message-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding-right: 14px;
+  flex-shrink: 0;
 }
 
 @keyframes message-scroll {
@@ -68,6 +112,7 @@ img { max-width: 100%; display: block; }
     transform: translateX(-50%);
   }
 }
+
 .main-nav { display: flex; gap: 30px; align-items: center; }
 .main-nav a { font-size: .92rem; font-weight: 700; }
 .main-nav a:hover { color: var(--red); }
@@ -352,4 +397,8 @@ img { max-width: 100%; display: block; }
   .product-extra { grid-template-columns: 1fr; }
   .trust-items { grid-template-columns: 1fr; }
   .contact-cta { flex-direction: column; align-items: flex-start; }
+}
+
+.showcase-large .showcase-image img {
+  transform: scale(1.35);
 }
