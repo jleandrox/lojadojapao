@@ -1,9 +1,4 @@
 # Loja do Japão — Site institucional
 
-Estrutura:
-- index.html — página principal
-- style.css — identidade visual e responsividade
-- script.js — menu mobile e ano automático
-- assets/logo-loja-do-japao.jpeg — logo fornecida
-- pages/politica-privacidade.html
-- pages/termos-de-uso.html
+ Site desenvolvido para fins de estudo, utilizando IA como apoio, com modificações personalizadas e implementação de animações. 
+ O projeto também será utilizado para atender aos requisitos de contratação de um plano no meu trabalho atual.
