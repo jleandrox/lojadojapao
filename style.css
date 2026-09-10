@@ -357,5 +357,25 @@ img { max-width: 100%; display: block; }
 }
 
 .showcase-large .showcase-image img {
-  transform: scale(1.35);
+  transform: scale(.95);
+}
+
+.showcase-image img[src*="delina_larosee"] {
+  transform: scale(1.25);
+}
+
+.contact-item p {
+  font-weight: 700;
+}
+
+.showcase-image img[src*="ps5-pro-1"] {
+  transform: scale(1.19);
+}
+
+.showcase-image img[src*="c8bb584dae6fce9f8365bcbbbc2532af_middle"] {
+  transform: scale(1.0);
+}
+
+.showcase-image img[src*="1xg.avif"] {
+  transform: scale(1.20);
 }
