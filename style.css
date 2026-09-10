@@ -357,7 +357,7 @@ img { max-width: 100%; display: block; }
 }
 
 .showcase-large .showcase-image img {
-  transform: scale(.95);
+  transform: scale(1.0);
 }
 
 .showcase-image img[src*="delina_larosee"] {
